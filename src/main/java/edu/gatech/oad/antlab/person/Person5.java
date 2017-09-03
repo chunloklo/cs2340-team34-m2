@@ -31,13 +31,13 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  if (input.length <= 2) {
+	  if (input.length() <= 2) {
 	  	return input;
 	  }
 
 	  String beg = input.substring(0, 1);
 	  String end = input.substring(2);
-	  output = end + beg;
+	  String output = end + beg;
 	  return output;
 	}
 
