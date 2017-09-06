@@ -35,7 +35,7 @@ public class Person5 {
 	  	return input;
 	  }
 
-	  String beg = input.substring(0, 1);
+	  String beg = input.substring(0, 2);
 	  String end = input.substring(2);
 	  String output = end + beg;
 	  return output;
