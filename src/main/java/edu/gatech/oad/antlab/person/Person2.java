@@ -1,5 +1,7 @@
 package edu.gatech.oad.antlab.person;
 
+import java.util.Collections;
+import java.util.List;
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -31,7 +33,14 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+		String[] letters = input.split("");
+		List<String> letterList = Arrays.asList(letters);
+		Collections.shuffle(letterList);
+		String scrambledString = "";
+		for (String c : letterList) {
+			scrambledString += c;
+		}
+		return scrambledString;
 	}
 	/**
 	 * Return a string rep of this object
